@@ -15,17 +15,13 @@ html,body{
     position: relative;
 }
 
-.page1{
-    height: 100vh;
-    width: 100%;
-    background-color: #151515;
-}
+
 #loader{
     height: 100%;
     width: 100%;
     background-color: #0B0B0B;
     position: fixed;
-    z-index: 999;
+    /* z-index: 999; */
     padding: 17vh 8vw;
     font-size: 3.6vw;
 }
@@ -104,4 +100,65 @@ html,body{
     
 }
 
+/* For page one */
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+#page1 #nav{
+    padding: 8.3vh 5.5vw 8.3vh 8.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page1 #nav #nav-part2{
+    display: flex;
+    justify-content: center;
+    gap: 5.5vh;
+    align-items: center;
+}
+#page1 #nav #nav-part2 h5{
+    font-weight: 500;
+    font-size: 2.5vh;
+}
 
+.hero h3{
+    font-size: 16vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5vh;
+    line-height: 17vh;
+    
+}
+.hero:nth-child(2){
+    margin-top: 8.5vh;
+}
+.hero{
+    width: 72.5%;
+    margin-left: 27.5%;
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+/* This is for cursor */
+.crsr{
+    height: 2.7vw;
+    width: 2.7vw;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    mix-blend-mode: difference;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    /* background-color: white; */
+}
+/* end of cursor */
+
+#hero3 h3:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
+}
