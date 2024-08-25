@@ -1,14 +1,19 @@
 function loadinganimation(){
     let zerotohundred=document.querySelector('#line1-part1 h5');
-let count=0;
+    let count=0;
 
 
 var tl=gsap.timeline();
+tl.to("#main",{
+    display:"none"
+    
+})
 tl.from("#loader .line h1",{
     y:150,
     stagger:0.2,
     duration:0.5,
-    delay:0.5
+    delay:0.5,
+    overflow:"hidden"
 } )
 tl.from("#line1-part1 , .line h2",{
     opacity:0,
@@ -28,10 +33,11 @@ tl.to("#loader",{
     opacity:0,
     duration:0.4,
     delay:4,
-    display:"none"
+    display:"none",
 })
-tl.from(".page1",{
+tl.from("#main",{
     delay:0.2,
+    display:"block",
     y:1500,
     opacity:0,
     ease:"power9"
@@ -40,7 +46,7 @@ tl.from(".page1",{
 // t1.to("#loader",{
 //     display:"none"
 // })
-tl.from(".hero h3",{
+tl.from("#page1 .hero h3",{
     y:120,
     stagger:0.2
 })
