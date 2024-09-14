@@ -137,7 +137,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-locomotivescrolltrigger();
+// locomotivescrolltrigger();
 
 
 function loadinganimation(){
@@ -147,11 +147,13 @@ function loadinganimation(){
 
 var tl=gsap.timeline();
 tl.to("#main",{
-    display:"none"
+    display:"none",
+
     
 })
 tl.to("#loader",{
-    display:"block"
+    display:"block",
+    
 })
 tl.from("#loader .line h1",{
     y:150,
@@ -177,20 +179,24 @@ tl.from("#line1-part1 , .line h2",{
 tl.to("#loader",{
     duration:0.4,
     delay:4,
-    // zindex:-999,
-    opacity:0,
     display:"none",
 })
+
 tl.to("#main",{
     display:"block",
-    zindex:12,
+    x:0
 })
-// tl.from("#main",{
-//     delay:0.2,
-//     display:"block",
-//     y:1500,
-//     opacity:0,
-//     ease:"power9"
+// t1.to("#page1",{
+//     display:"block"
+// })
+// t1.to("#page2",{
+//     display:"block"
+// })
+// t1.to("#page3",{
+//     display:"block"
+// })
+// t1.to("#page4",{
+//     display:"block"
 // })
 
 

@@ -23,15 +23,29 @@
     font-family: "plain light";
     color: #fff;
 }
-html,body{
-    height: 100%;
-    width: 100%;
+body{
+    min-height: 100%;
+    /* min-width: 100%; */
     /* background-color: #0B0B0B; */
     background-color: #151515;
+    overflow-x: hidden;
+    
+    /* overflow: hidden; */
+    
     
 }
+
+.upwards{
+    height: 40vh;
+    width:100vw;
+    background-color: red;
+}
 #main{
-    position: relative;
+    min-height: 100%;
+    /* overflow-y: scroll; */
+    width: 100%;
+    position: absolute;
+    /* overflow: hidden; */
 }
 
 
@@ -45,6 +59,7 @@ html,body{
     font-size: 3.6vw;
     /* display: none; */
     overflow: hidden;
+    display: none;
 }
 .line{
     /* background-color: red; */
@@ -174,9 +189,10 @@ html,body{
 
 /* For page one */
 .page1{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #151515;
+    /* overflow-x: hidden; */
     /* z-index: 8; */
 }
 #page1 #nav{
@@ -286,7 +302,7 @@ html,body{
 /* Page2 starts here */
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: #151515;
     position: relative;
@@ -558,7 +574,7 @@ html,body{
 
 /* this is footer section */
 #footer{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
 
@@ -653,7 +669,7 @@ html,body{
 #page3 .underline{
     margin-left: 31vw;
     height: 1.5px;
-    width: 100%;
+    width: 65%;
     background-color: white;
     margin-top: 3.5vh;
     margin-bottom: 8.8vh;
@@ -681,7 +697,7 @@ html,body{
 #image-div-container .image-div{
     
     height: 84vh;
-    width: 27vw;
+    width: 26vw;
     margin-bottom: 20vh;
     /* display: flex;
     flex-direction: column; */
@@ -964,7 +980,7 @@ in the css. */
 /* making the website responsive */
 @media screen and (max-width:600px){
     .page1{
-        height: 47vh;
+        min-height: 47vh;
         width: 100%;
         background-color: #151515;
         /* z-index: 8; */
@@ -1079,7 +1095,7 @@ in the css. */
 /* Page2 starts here */
 
 #page2{
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
     background-color: #151515;
     position: relative;
@@ -1087,7 +1103,7 @@ in the css. */
 }
 #video-container{
 
-    height: 66%;
+    height: 53%;
     width: 100%;
     left: 0vh;
     position: absolute;
@@ -1483,7 +1499,7 @@ in the css. */
     height: 1.5px;
     width: 89vw;
     background-color: white;
-    margin-top: 14vh;
+    margin-top: 8vh;
     margin-bottom: 7.5vh;
 }
 
@@ -1694,7 +1710,7 @@ in the css. */
 
 /* this is footer section */
 #footer{
-    height: 88vh;
+    min-height: 88vh;
     width: 100%;
     position: relative;
     padding: 8vh 2vh;
@@ -1806,6 +1822,9 @@ in the css. */
 .line{
     line-height: 4vh;
 
+}
+#loader{
+    display: none;
 }
 
 #line1-part1{
